@@ -1,0 +1,20 @@
+@mixin sizes ($height,$width,$border-radius) {
+    height: $height;
+    width: $width;
+    border-radius: $border-radius;
+}
+
+@mixin text-size ($text-size,$text-aling ){
+    font-size: $text-size;
+    text-align: $text-aling;
+    
+}
+
+@mixin position ($height,$width,$position,$display,$align-itens,$padding) {
+    height: $height;
+    width: $width;
+    position: $position;
+    display: $display;
+    align-items: $align-itens;
+    padding: $padding;
+}

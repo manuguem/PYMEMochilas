@@ -1,0 +1,122 @@
+@import "../scss/layout/body";
+
+@import "../scss/layout/footer";
+
+@import "../scss/bootstrap.scss";
+
+@import "../scss/variables";
+
+@import "../scss/grid";
+
+@import "../scss/layout/header";
+
+@import "../scss/layout/main";
+
+@import "../scss/mixins/sizes";
+
+@import "../scss/mixins/border-radius";
+
+@import "../scss/transitions";
+
+@import "../scss/utilities/breakpoints";
+
+.item {
+    @include sizes(15rem,15rem,1rem)
+}
+.border-item {
+    @include sizes(22rem,22rem,0.5rem)
+}
+
+.card-body {
+    @include border-radius(null,3rem)
+}
+
+.size-backpack {
+  @include sizes(40rem,32rem,0.2rem)
+}
+
+/* BEM */
+
+.Payments{
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .textPayments__color {
+    color: $black;
+  }
+  
+  .textPayments__color--size {
+    @include text-size(medium,null)
+  }
+  
+  .textPayments__color--aling {
+    @include text-size(null,left)
+  }
+  
+  .Payments__children {
+  flex-basis: auto;
+  }
+  
+  .Payments__colortitle {
+  color: $black;
+  font-weight: $font-weight-bold;
+  }
+  
+  .Payments--colortitle-bold {
+    font-weight: $font-weight-bold;
+  }
+  
+  /* FIN BEM */
+  
+  .center-text {
+    @include text-size(null,center)
+  }
+
+  .owl-container {
+   @include position (100%,50%,relative,null,null,null)
+  }
+ .owl-itemimg {
+  @include position (auto,100%,null,block,null,null)
+ }
+
+ .owl-stage-outer {
+   @include sizes (25rem,null,null)
+
+ }
+
+ .flexOwl {
+ display: flex; 
+ align-items: stretch;
+ padding: auto;
+ @include position (null,null,null,flex,stretch,auto)
+}
+
+ .dropdown-item.active, .dropdown-item:active {
+  color: $white;
+  text-decoration: none;
+  background-color: orangered;
+ }
+
+ .bg-white {
+   background-color: $white;
+ }
+
+ @media only screen and (max-width: 1232px) {
+  .owl-stage-outer {
+    @include sizes (10rem,null,null)
+    
+}
+.dropdown-menu {
+  margin-left: auto;
+}
+
+iframe {
+  @include sizes (auto,auto,null)
+}
+
+ }
